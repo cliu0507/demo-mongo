@@ -31,21 +31,25 @@ MongoClient.connect(url, function(err, client) {
     Db.collection('movie', function(err,cl){
         let temp = cl;
         var string = 'abc'
+        let test2 = 100
         setTimeout(function() {
             console.log(string)
             console.log('Blah blah blah blah extra-blah');
             console.log(cl);
+            console.log(test2)
             cl.find({"name" : "new"}).toArray(function(err,result){
                 if (err)
                  throw err;
                 console.log(result)
             })
-        }, 3000, temp, string);
+        }, 3000, temp, string, test2);
         cl.find({"name" : "new"}).toArray(function(err,result){
             if (err)
              throw err;
             console.log(result)
         })
+        //test2 = 200
+        //cl = 'test'
     })
 
     adminDb.listDatabases(function(err, dbs) {
