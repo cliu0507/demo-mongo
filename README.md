@@ -44,3 +44,13 @@ sudo systemctl stop mongod
 ```
 mongo
 ```
+
+## MongoShell API reference
+```
+https://docs.mongodb.com/manual/reference/mongo-shell/
+```
+
+## mongoDB Node.js driver
+```
+npm install mongodb --save
+```
